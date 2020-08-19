@@ -3,7 +3,7 @@ module.exports = {
   host: 'localhost',
   username: 'docker',
   password: 'docker',
-  database: 'node-sequelize',
+  database: 'react-blog',
   define: {
     timestamps: true,
   },
