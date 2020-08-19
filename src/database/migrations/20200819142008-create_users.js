@@ -8,7 +8,7 @@ module.exports = {
         unique: true,
       },
       avatar: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(1234),
         allowNull: true,
       },
       name: {
@@ -35,17 +35,17 @@ module.exports = {
       },
       firstSocialMediaUrl: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
         unique: true,
       },
       secondSocialMediaUrl: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
         unique: true,
       },
       thirdSocialMediaUrl: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
         unique: true,
       },
       createdAt: {
