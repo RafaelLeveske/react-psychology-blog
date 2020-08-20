@@ -11,12 +11,16 @@ module.exports = {
         type: Sequelize.STRING(1234),
         allowNull: true,
       },
+      imageUrl: {
+        type: Sequelize.STRING(1234),
+        allowNull: true,
+      },
       name: {
         type: Sequelize.STRING,
         allowNull: false,
       },
       description: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(1234),
         allowNull: false,
       },
       password: {

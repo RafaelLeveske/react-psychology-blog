@@ -28,6 +28,7 @@ module.exports = {
     }
     try {
       const {
+        imageUrl,
         name,
         email,
         password,
@@ -47,6 +48,7 @@ module.exports = {
       const user = {
         id: uuid(),
         avatar: req.file.filename,
+        imageUrl,
         name,
         description,
         email,
@@ -72,6 +74,7 @@ module.exports = {
     try {
       const { userId } = req.params;
       const {
+        imageUrl,
         name,
         email,
         password,
@@ -85,6 +88,7 @@ module.exports = {
 
       const user = {
         id: uuid(),
+        imageUrl,
         avatar: req.file.filename,
         name,
         description,

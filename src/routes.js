@@ -12,8 +12,8 @@ const routes = express.Router();
 
 const upload = multer(uploadConfig);
 
-routes.get('/users', authMiddleware, UserController.index);
-routes.get('/users/:userId', authMiddleware, UserController.show);
+routes.get('/users', UserController.index);
+routes.get('/users/:userId', UserController.show);
 routes.post('/users', upload.single('avatar'), UserController.store);
 routes.put(
   '/users/:userId',
