@@ -9,7 +9,7 @@ module.exports = {
       [
         {
           id: uuid(),
-          avatar: process.env.SEED_AVATAR_URL,
+          imageUrl: process.env.SEED_IMAGE_URL,
           name: process.env.SEED_NAME,
           email: process.env.SEED_MAIL,
           password: await hash(process.env.SEED_PASSWORD, 8),
